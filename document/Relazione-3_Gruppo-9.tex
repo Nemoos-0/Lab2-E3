@@ -1,0 +1,125 @@
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[margin=1in]{geometry} % manage page dimentions
+\usepackage[utf8]{inputenc} % utf-8 encoding
+\usepackage[italian]{babel} % italian default text
+\usepackage[hidelinks]{hyperref} % link references
+\usepackage{bookmark} % 
+\usepackage{import} % import other .tex files
+\usepackage{amsmath} % math commands
+\usepackage{amssymb} % math symbols
+\usepackage{amsthm} % math environments
+\usepackage{amsmath} % equation align
+\usepackage{siunitx} % SI unit
+\usepackage{booktabs} % tabular enhance
+\usepackage{multirow} % dinamic tabular cell dimentions
+\usepackage{longtable} % multi-page table
+\usepackage[labelfont=bf, skip=.5em, font=small]{caption} % beautiful caption
+\usepackage{subcaption} % subfigure
+\usepackage{graphicx} % import graphics
+\usepackage{fancyhdr} % custom page header and footer
+
+% \showthe\textwidth
+
+\graphicspath{{../assets/}} % base graphics path
+
+\setlength{\parskip}{1em} % distance between paragraphs
+\setlength{\parindent}{0em} % indentation at beginning of paragraph
+\setlength{\headheight}{13.59999pt}
+
+\numberwithin{equation}{section} % equation tag relative to section
+
+\pagestyle{fancy}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\textbf{Pag. \thepage}}
+\fancyfoot{}
+
+\title{Esperienza 3}
+\date{9/12/2021}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\tableofcontents
+
+\section{Obiettivo dell'esperienza}
+
+
+\section{Strumenti e materiali}
+
+\begin{itemize}
+    \item Generatore di tensione AC
+    \item Multimetro digitale (utilizzato come ohmetro)
+    \item Oscilloscopio
+    \item Cavi
+    \item Breadboard
+    \item Resistore
+    \item Condensatore
+\end{itemize}
+
+\section{Circuito}
+
+\section{Onda quadra}
+
+\begin{equation}
+    V = V_{0} \cdot e^{-t/RC}
+\end{equation}
+
+\[
+    \ln(V) = \ln(V_{0} \cdot e^{-t/RC}) = \ln(V_{0}) - \frac{t}{RC}
+\]
+
+Quindi facendo un grafico semi-logaritmico si ottiene una funzione lineare
+
+\begin{figure}[ht!]
+    \includegraphics{onda_quadra_V(t)_pendenze.pdf}
+    \caption{Rette massima e minima pendenza}
+    \label{fig:onda quadra pendenze}
+\end{figure}
+
+La retta di massima pendenza passa per i punti \((-0.2, 7)\) e \((35, 0.6)\) mentre la retta di minima pendenza passa per i punti \((0.2, 7)\) e \((34, 0.5)\)
+
+\begin{equation*}
+    m_{max} = \frac{\ln(7/0.6)}{- 0.2 - 35} = - 0.06979
+    \qquad
+    m_{min} = \frac{\ln(7/0.5)}{0.2 - 34} = - 0.07808
+\end{equation*}
+
+\begin{align*}
+    m_{best} &= \frac{m_{max} + m_{min}}{2} = 0.0739 \\
+    \delta m &= \frac{m_{max} - m_{min}}{2} = 0.0041
+\end{align*}
+
+\begin{equation}
+    m = - 0.074 \pm 0.004
+\end{equation}
+
+Essendo \(m = \dfrac{1}{RC}\) e conoscendo il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\) misurato tramite il multimetro
+
+\begin{align*}
+    \varepsilon_R &= \frac{0.004}{1.874} = 0.0021 \approx 0.002 \\
+    \varepsilon_m &= \frac{0.004}{0.074} = 0.054 \approx 0.05 \\
+    \varepsilon_C &= \sqrt{\varepsilon_R^{2} + \varepsilon_m^{2}} = 0.050 % review
+\end{align*}
+
+\begin{equation}
+    C = \frac{R}{m} = 25.32 \pm 1.27 \approx (25.3 \pm 1.3) \; \unit{nF}
+\end{equation}
+
+\subsection{Dati ed errori}
+
+\subsection{Analisi dati}
+
+\section{Onda sinusoidale}
+
+\subsection{Dati ed errori}
+
+\subsection{Analisi dati}
+
+\section{Conclusioni}
+
+\end{document}
