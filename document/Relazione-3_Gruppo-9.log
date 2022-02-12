@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.1)  11 FEB 2022 19:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.1)  12 FEB 2022 10:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -415,16 +415,16 @@ LaTeX Font Info:    ... okay on input line 41.
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: letterpaper
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
@@ -432,7 +432,7 @@ LaTeX Font Info:    ... okay on input line 41.
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -510,25 +510,34 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{C:/Users/mrmat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<../assets//onda_quadra_V(t)_pendenze.pdf, id=35, 469.67627pt x 292.12503pt>
+{C:/Users/mrmat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (../tables/../tables/onda_quadra_Vt.tex)
+<../assets//onda_quadra_V(t)_pendenze.pdf, id=39, 470.56242pt x 292.81946pt>
 File: ../assets//onda_quadra_V(t)_pendenze.pdf Graphic file (type pdf)
 <use ../assets//onda_quadra_V(t)_pendenze.pdf>
-Package pdftex.def Info: ../assets//onda_quadra_V(t)_pendenze.pdf  used on input line 79.
-(pdftex.def)             Requested size: 469.67513pt x 292.12431pt.
- [2 <../assets//onda_quadra_V(t)_pendenze.pdf>] [3] (Relazione-3_Gruppo-9.aux) ) 
+Package pdftex.def Info: ../assets//onda_quadra_V(t)_pendenze.pdf  used on input line 104.
+(pdftex.def)             Requested size: 470.56128pt x 292.81874pt.
+
+Overfull \hbox (17.59338pt too wide) in paragraph at lines 104--105
+[][] 
+ []
+
+[2] [3 <../assets//onda_quadra_V(t)_pendenze.pdf>] [4] (Relazione-3_Gruppo-9.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 16580 strings out of 478593
- 307744 string characters out of 2854420
- 585371 words of memory out of 3000000
- 34530 multiletter control sequences out of 15000+600000
+ 16601 strings out of 478593
+ 308291 string characters out of 2854420
+ 590510 words of memory out of 3000000
+ 34543 multiletter control sequences out of 15000+600000
  477620 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,12n,79p,480b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Relazione-3_Gruppo-9.pdf (3 pages, 225084 bytes).
+ 70i,12n,79p,666b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on Relazione-3_Gruppo-9.pdf (4 pages, 261421 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

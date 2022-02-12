@@ -1,4 +1,4 @@
-\documentclass[11pt, letterpaper]{article}
+\documentclass[11pt, a4paper]{article}
 
 \usepackage[margin=1in]{geometry} % manage page dimentions
 \usepackage[utf8]{inputenc} % utf-8 encoding
@@ -65,19 +65,44 @@
 
 \section{Onda quadra}
 
-\begin{equation}
+La prima parte dell'esperimento consiste nell'applicare ai capi del circuito una tensione variabile secondo un'onda quadra di ampiezza \(V_{0}\). La frequenda dell'onda è stata scelta in modo da permettere al condensatore di completare il regime transitorio, passando da una tensione \(V_{0}/2\) fino ad una tensione \(- V_{0}/2\). La curva osservata nell'oscilloscopio rappresenta la tensione \(V_{C}\) ai capi del condensatore in funzione del tempo \(t\) e segue l'\autoref{eq:regime transitorio onda quadra}.
+
+\begin{equation} \label{eq:regime transitorio onda quadra}
+    V_{C} = V_{0} \cdot e^{-t/RC} - V_{0}/2
+\end{equation}
+
+Per prendere le misure il sistema di riferimento è stato traslato in modo da porre come \(0\) delle ordinate il valore \(- V_{0}/2\) e ottenere l'\autoref{eq:regime transitorio condensatore}.
+
+\begin{equation} \label{eq:regime transitorio condensatore}
     V = V_{0} \cdot e^{-t/RC}
 \end{equation}
 
-\[
-    \ln(V) = \ln(V_{0} \cdot e^{-t/RC}) = \ln(V_{0}) - \frac{t}{RC}
-\]
+Noto il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\), misurato tramite il multimetro, si vuole ottenere il valore di \(C\).
 
-Quindi facendo un grafico semi-logaritmico si ottiene una funzione lineare
+\subsection{Dati ed errori}
+
+Attraverso l'oscilloscopio si è fissato il primo cursore in corrispondenza dell'asintoto della curva a \(- V_{0}/2\), questo sarà lo \(0\) delle ordinale, il secondo cursore è stato fatto variare in modo da ottenere la differenza di potenziale al variere del tempo. Le misure ottenute sono riportate, insieme ai loro errori già arrotondati, nella \autoref{tab:misure onda quadra}.
+
+% Attraverso l'oscilloscopio, con l'ausilio dei cursori, è stata misurata la differenza di potenziale ai capi del condensatore al variare del tempo.
+
+\begin{table}[ht!]
+    \centering
+    \caption{Tabella delle misure dell'onda quadra}
+    \import{../tables/}{onda_quadra_Vt.tex}
+    \label{tab:misure onda quadra}
+\end{table}
+
+\subsection{Analisi dati}
+
+\begin{equation*}
+    V = V_{0} \cdot e^{-t/RC} \implies \ln(V) = \ln(V_{0} \cdot e^{-t/RC}) = \ln(V_{0}) - \frac{t}{RC}
+\end{equation*}
+
+Quindi riportando le misure in un grafico semi-logaritmico, come fatto in \autoref{fig:onda quadra pendenze}, ci si aspetta di ottenere una funzione lineare
 
 \begin{figure}[ht!]
     \includegraphics{onda_quadra_V(t)_pendenze.pdf}
-    \caption{Rette massima e minima pendenza}
+    \caption{Grafico semi-logaritmico misure dell'onda quadra}
     \label{fig:onda quadra pendenze}
 \end{figure}
 
@@ -90,15 +115,15 @@ La retta di massima pendenza passa per i punti \((-0.2, 7)\) e \((35, 0.6)\) men
 \end{equation*}
 
 \begin{align*}
-    m_{best} &= \frac{m_{max} + m_{min}}{2} = 0.0739 \\
-    \delta m &= \frac{m_{max} - m_{min}}{2} = 0.0041
+    m_{best} &= \frac{m_{max} + m_{min}}{2} = - 0.0739 \approx - 0.074 \\
+    \delta m &= \frac{m_{max} - m_{min}}{2} = 0.0041 \approx 0.004
 \end{align*}
 
 \begin{equation}
     m = - 0.074 \pm 0.004
 \end{equation}
 
-Essendo \(m = \dfrac{1}{RC}\) e conoscendo il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\) misurato tramite il multimetro
+Essendo \(m = \dfrac{1}{RC}\) e conoscendo il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\).
 
 \begin{align*}
     \varepsilon_R &= \frac{0.004}{1.874} = 0.0021 \approx 0.002 \\
@@ -109,10 +134,6 @@ Essendo \(m = \dfrac{1}{RC}\) e conoscendo il valore di \(R = (1.874 \pm 0.004) 
 \begin{equation}
     C = \frac{R}{m} = 25.32 \pm 1.27 \approx (25.3 \pm 1.3) \; \unit{nF}
 \end{equation}
-
-\subsection{Dati ed errori}
-
-\subsection{Analisi dati}
 
 \section{Onda sinusoidale}
 
