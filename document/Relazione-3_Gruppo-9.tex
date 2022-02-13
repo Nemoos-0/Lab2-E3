@@ -48,6 +48,25 @@
 
 \section{Obiettivo dell'esperienza}
 
+Lo scopo dell'esperienza è quello di calcolare il valore della resistenza e della capacità di un circuito RC. Per farlo si analizza come varia la differenza di potenziale ai capi di R (\autoref{fig:circuito R}) e/o ai capi di C (\autoref{fig:circuito C}) quando si sottoposto il circuito ad una tensione variabile.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[c]{.3\textwidth}
+        % \import{../assets/}{circuito_osc_R.pdf_tex}
+        \includegraphics[width=\textwidth]{circuito_osc_R.pdf}
+        \caption{Misure ai capi di R}
+        \label{fig:circuito R}
+    \end{subfigure}
+    \hspace{1in}
+    \begin{subfigure}[c]{.3\textwidth}
+        % \import{../assets/}{circuito_osc_C.pdf_tex}
+        \includegraphics[width=\textwidth]{circuito_osc_C.pdf}
+        \caption{Misure ai capi di C}
+        \label{fig:circuito C}
+    \end{subfigure}
+    \caption{Schema circuito}
+  \end{figure}
 
 \section{Strumenti e materiali}
 
@@ -60,8 +79,6 @@
     \item Resistore
     \item Condensatore
 \end{itemize}
-
-\section{Circuito}
 
 \section{Onda quadra}
 
@@ -87,7 +104,7 @@ Attraverso l'oscilloscopio si è fissato il primo cursore in corrispondenza dell
 
 \begin{table}[ht!]
     \centering
-    \caption{Tabella delle misure dell'onda quadra}
+    \caption{Misure dell'onda quadra}
     \import{../tables/}{onda_quadra_Vt.tex}
     \label{tab:misure onda quadra}
 \end{table}

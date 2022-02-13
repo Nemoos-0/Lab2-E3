@@ -1,12 +1,11 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {1}Obiettivo dell'esperienza}{1}{section.1}%
-\contentsline {section}{\numberline {2}Strumenti e materiali}{1}{section.2}%
-\contentsline {section}{\numberline {3}Circuito}{2}{section.3}%
-\contentsline {section}{\numberline {4}Onda quadra}{2}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Dati ed errori}{2}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Analisi dati}{2}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Onda sinusoidale}{4}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Dati ed errori}{4}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Analisi dati}{4}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Conclusioni}{4}{section.6}%
+\contentsline {section}{\numberline {2}Strumenti e materiali}{2}{section.2}%
+\contentsline {section}{\numberline {3}Onda quadra}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dati ed errori}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Analisi dati}{2}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Onda sinusoidale}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Dati ed errori}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Analisi dati}{4}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Conclusioni}{4}{section.5}%

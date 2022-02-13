@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.1)  12 FEB 2022 10:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.1)  13 FEB 2022 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,36 +508,45 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `Relazione-3_Gruppo-9.toc'.
 
+<../assets//circuito_osc_R.pdf, id=14, 204.89441pt x 106.56107pt>
+File: ../assets//circuito_osc_R.pdf Graphic file (type pdf)
+<use ../assets//circuito_osc_R.pdf>
+Package pdftex.def Info: ../assets//circuito_osc_R.pdf  used on input line 57.
+(pdftex.def)             Requested size: 135.89174pt x 70.67522pt.
+<../assets//circuito_osc_C.pdf, id=15, 185.74893pt x 104.30087pt>
+File: ../assets//circuito_osc_C.pdf Graphic file (type pdf)
+<use ../assets//circuito_osc_C.pdf>
+Package pdftex.def Info: ../assets//circuito_osc_C.pdf  used on input line 64.
+(pdftex.def)             Requested size: 135.89174pt x 76.31088pt.
  [1
 
-{C:/Users/mrmat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (../tables/../tables/onda_quadra_Vt.tex)
-<../assets//onda_quadra_V(t)_pendenze.pdf, id=39, 470.56242pt x 292.81946pt>
+{C:/Users/mrmat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <../assets//circuito_osc_R.pdf> <../assets//circuito_osc_C.pdf
+
+pdfTeX warning: pdflatex (file ../assets//circuito_osc_C.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (../tables/../tables/onda_quadra_Vt.tex)
+<../assets//onda_quadra_V(t)_pendenze.pdf, id=46, 470.56242pt x 292.81946pt>
 File: ../assets//onda_quadra_V(t)_pendenze.pdf Graphic file (type pdf)
 <use ../assets//onda_quadra_V(t)_pendenze.pdf>
-Package pdftex.def Info: ../assets//onda_quadra_V(t)_pendenze.pdf  used on input line 104.
+Package pdftex.def Info: ../assets//onda_quadra_V(t)_pendenze.pdf  used on input line 121.
 (pdftex.def)             Requested size: 470.56128pt x 292.81874pt.
 
-Overfull \hbox (17.59338pt too wide) in paragraph at lines 104--105
+Overfull \hbox (17.59338pt too wide) in paragraph at lines 121--122
 [][] 
  []
 
-[2] [3 <../assets//onda_quadra_V(t)_pendenze.pdf>] [4] (Relazione-3_Gruppo-9.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[2] [3 <../assets//onda_quadra_V(t)_pendenze.pdf>] [4] (Relazione-3_Gruppo-9.aux) ) 
 Here is how much of TeX's memory you used:
- 16601 strings out of 478593
- 308291 string characters out of 2854420
- 590510 words of memory out of 3000000
- 34543 multiletter control sequences out of 15000+600000
- 477620 words of font info for 59 fonts, out of 8000000 for 9000
+ 16631 strings out of 478593
+ 309097 string characters out of 2854420
+ 590717 words of memory out of 3000000
+ 34569 multiletter control sequences out of 15000+600000
+ 478227 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,12n,79p,666b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Relazione-3_Gruppo-9.pdf (4 pages, 261421 bytes).
+{C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on Relazione-3_Gruppo-9.pdf (4 pages, 282566 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
+ 188 PDF objects out of 1000 (max. 8388607)
  22 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
