@@ -19,8 +19,6 @@
 \usepackage{graphicx} % import graphics
 \usepackage{fancyhdr} % custom page header and footer
 
-% \showthe\textwidth
-
 \graphicspath{{../assets/}} % base graphics path
 
 \setlength{\parskip}{1em} % distance between paragraphs
@@ -88,17 +86,18 @@ La prima parte dell'esperimento consiste nell'applicare ai capi del circuito una
     V_{C} = V_{0} \cdot e^{-t/RC} - V_{0}/2
 \end{equation}
 
-Per prendere le misure il sistema di riferimento è stato traslato in modo da porre come \(0\) delle ordinate il valore \(- V_{0}/2\) e ottenere l'\autoref{eq:regime transitorio condensatore}.
+Per prendere le misure il sistema di riferimento è stato traslato in modo da porre come zero delle ordinate il valore \(- V_{0}/2\) e ottenere l'\autoref{eq:regime transitorio condensatore}.
 
 \begin{equation} \label{eq:regime transitorio condensatore}
     V = V_{0} \cdot e^{-t/RC}
 \end{equation}
 
-Noto il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\), misurato tramite il multimetro, si vuole ottenere il valore di \(C\).
+Noto il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\) (misurato con il multimetro) si vuole ottenere il valore di \(C\).
 
 \subsection{Dati ed errori}
 
-Attraverso l'oscilloscopio si è fissato il primo cursore in corrispondenza dell'asintoto della curva a \(- V_{0}/2\), questo sarà lo \(0\) delle ordinale, il secondo cursore è stato fatto variare in modo da ottenere la differenza di potenziale al variere del tempo. Le misure ottenute sono riportate, insieme ai loro errori già arrotondati, nella \autoref{tab:misure onda quadra}.
+Sull'oscilloscopio è stato fissato il primo cursore in corrispondenza dell'asintoto della curva a \(- V_{0}/2\); questo sarà lo zero delle ordinate. \\
+Il secondo cursore è stato fatto variare in modo da ottenere la differenza di potenziale al variare del tempo. Le misure ottenute sono riportate, insieme ai loro errori già arrotondati, nella \autoref{tab:misure onda quadra}.
 
 % Attraverso l'oscilloscopio, con l'ausilio dei cursori, è stata misurata la differenza di potenziale ai capi del condensatore al variare del tempo.
 
@@ -117,7 +116,7 @@ Attraverso l'oscilloscopio si è fissato il primo cursore in corrispondenza dell
     V = V_{0} \cdot e^{-t/RC} \implies \ln(V) = \ln(V_{0} \cdot e^{-t/RC}) = \ln(V_{0}) - \frac{t}{RC}
 \end{equation*}
 
-Quindi riportando le misure in un grafico semi-logaritmico, come fatto in \autoref{fig:onda quadra pendenze}, ci si aspetta di ottenere una funzione lineare
+Riportando le misure in un grafico semi-logaritmico (come in \autoref{fig:onda quadra pendenze}), ci si aspetta di ottenere una funzione lineare:
 
 \begin{figure}[ht!]
     \includegraphics{onda_quadra_V(t)_pendenze.pdf}
@@ -125,7 +124,7 @@ Quindi riportando le misure in un grafico semi-logaritmico, come fatto in \autor
     \label{fig:onda quadra pendenze}
 \end{figure}
 
-La retta di massima pendenza passa per i punti \((-0.2, 7)\) e \((35, 0.6)\) mentre la retta di minima pendenza passa per i punti \((0.2, 7)\) e \((34, 0.5)\)
+La retta di massima pendenza passa per i punti \((-0.2, 7)\) e \((35, 0.6)\), mentre la retta di minima pendenza passa per i punti \((0.2, 7)\) e \((34, 0.5)\).
 
 \begin{equation*}
     m_{max} = \frac{\ln(7/0.6)}{- 0.2 - 35} = - 0.06979
