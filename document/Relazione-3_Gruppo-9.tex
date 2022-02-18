@@ -35,7 +35,7 @@
 \fancyfoot{}
 
 \title{Esperienza 3}
-\date{9/12/2021}
+\date{09/12/2021}
 \author{}
 
 \begin{document}
@@ -82,7 +82,7 @@ Lo scopo dell'esperienza è quello di calcolare il valore della resistenza e del
 
 \section{Onda quadra}
 
-La prima parte dell'esperimento consiste nell'applicare ai capi del circuito una tensione variabile secondo un'onda quadra di ampiezza \(V_{0}\). La frequenda dell'onda è stata scelta in modo da permettere al condensatore di completare il regime transitorio, passando da una tensione \(V_{0}/2\) fino ad una tensione \(- V_{0}/2\). La curva osservata nell'oscilloscopio rappresenta la tensione \(V_{C}\) ai capi del condensatore in funzione del tempo \(t\) e segue l'\autoref{eq:regime transitorio onda quadra}.
+La prima parte dell'esperimento consiste nell'applicare ai capi del circuito una tensione variabile secondo un'onda quadra di ampiezza \(V_{0}\). La frequenza dell'onda è stata scelta in modo da permettere al condensatore di completare il regime transitorio, passando da una tensione \(V_{0}/2\) fino ad una tensione \(- V_{0}/2\). La curva osservata nell'oscilloscopio rappresenta la tensione \(V_{C}\) ai capi del condensatore in funzione del tempo \(t\) e segue l'\autoref{eq:regime transitorio onda quadra}.
 
 \begin{equation} \label{eq:regime transitorio onda quadra}
     V_{C} = V_{0} \cdot e^{-t/RC} - V_{0}/2
@@ -100,8 +100,6 @@ Noto il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\), misurato tramite 
 
 Attraverso l'oscilloscopio si è fissato il primo cursore in corrispondenza dell'asintoto della curva a \(- V_{0}/2\), questo sarà lo \(0\) delle ordinale, il secondo cursore è stato fatto variare in modo da ottenere la differenza di potenziale al variere del tempo. Le misure ottenute sono riportate, insieme ai loro errori già arrotondati, nella \autoref{tab:misure onda quadra}.
 
-% Attraverso l'oscilloscopio, con l'ausilio dei cursori, è stata misurata la differenza di potenziale ai capi del condensatore al variare del tempo.
-
 \begin{table}[ht!]
     \centering
     \caption{Misure dell'onda quadra}
@@ -117,11 +115,11 @@ Attraverso l'oscilloscopio si è fissato il primo cursore in corrispondenza dell
     V = V_{0} \cdot e^{-t/RC} \implies \ln(V) = \ln(V_{0} \cdot e^{-t/RC}) = \ln(V_{0}) - \frac{t}{RC}
 \end{equation*}
 
-Quindi riportando le misure in un grafico semi-logaritmico, come fatto in \autoref{fig:onda quadra pendenze}, ci si aspetta di ottenere una funzione lineare
+Quindi riportando le misure in un grafico semi-logaritmico, come in \autoref{fig:onda quadra pendenze}, ci si aspetta di ottenere una funzione lineare
 
 \begin{figure}[ht!]
     \includegraphics{onda_quadra_V(t)_pendenze.pdf}
-    \caption{Grafico semi-logaritmico misure dell'onda quadra}
+    \caption{Grafico semi-logaritmico delle misure dell'onda quadra}
     \label{fig:onda quadra pendenze}
 \end{figure}
 
@@ -156,10 +154,121 @@ Essendo \(m = \dfrac{1}{RC}\) e conoscendo il valore di \(R = (1.874 \pm 0.004) 
 
 \section{Onda sinusoidale}
 
-\subsection{Dati ed errori}
+La seconda parte dell'esperimento consiste nel sottoporre il circuito a un regime di tensione sinusoidale, variando la frequenza in entrata; abbiamo poi misurato la tensione in uscita del circuito ai capi di $C$ e ai capi di $R$, così come il tempo di risposta del circuito. Con questi dati abbiamo determinato il modulo della \emph{funzione di trasferimento} $|A_{C}|$ e la frequenza di taglio $f_{0}$.
 
-\subsection{Analisi dati}
+\subsection{Funzione di trasferimento ai capi di $C$}
+
+\subsubsection{Dati ed errori}
+
+Nella \autoref{tab:misure onda sinusoidale C} sono riportati i risultati delle misurazioni effettuate con i relativi errori
+
+\begin{table}[ht!]
+    \centering
+    \caption{Misure dell'onda sinusoidale ai capi di $C$}
+    \import{../tables/}{onda_sin_VC.tex}
+    \label{tab:misure onda sinusoidale C}
+\end{table}
+
+\newpage
+
+\subsubsection{Analisi dati}
+
+Con i dati raccolti si calcola il modulo della funzione di trasferimento $|A_{C}|$ al variare della frequenza utilizzando l'\autoref{eq:funzione di trasferimento C}
+
+\begin{align} \label{eq:funzione di trasferimento C}
+    \begin{split}
+        |A_{C}| &= \frac{V_{out}}{V_{in}} \\
+        \varepsilon_{|A_{C}|} &= \frac{\delta V_{out}}{V_{out}} + \frac{\delta V_{in}}{V_{in}}
+    \end{split}
+\end{align}
+
+\begin{table}[ht!]
+    \centering
+    \caption{Valori di $|A_{C}|$}
+    \import{../tables/}{onda_sin_AC.tex}
+    \label{tab:funzione di trasferimento C}
+\end{table}
+
+Riportando le misure della \autoref{tab:funzione di trasferimento C} in un grafico logaritmico $|A_{C}|(f)$ si ottiene la \autoref{fig:funzione di trasferimento C}
+
+\begin{figure}[ht!]
+    \includegraphics{onda_sin_AC(f).pdf}
+    \caption{Grafico logaritmico di $|A_{C}|(f)$}
+    \label{fig:funzione di trasferimento C}
+\end{figure}
+
+È noto che la funzione di trasferimento in scala logaritmica assuma un andamento lineare a frequenze elevate; è possibile quindi tracciare una retta di pendenza $-1$ passante per i punti situati all'estrema destra del grafico. Questa retta interseca l'asintoto orizzontale $|A_{C}| = 1$ alla frequenza di taglio $f_{0}$.
+
+\begin{figure}[ht!]
+    \includegraphics{onda_sin_AC(f)_taglio.pdf}
+    \caption{Grafico della stima della frequenza di taglio}
+    \label{fig:frequenza di taglio C}
+\end{figure}
+
+Uno zoom sull'intersezione delle rette è riportato in \autoref{fig:frequenza di taglio C zoom}%, mentre in \autoref{fig:frequenza di taglio C intercette} uno zoom sulle rette di massima e minima intercetta.
+
+\begin{figure}[ht!]
+    \includegraphics{onda_sin_AC(f)_taglio_frequenza.pdf}
+    \caption{Zoom intersezione rette}
+    \label{fig:frequenza di taglio C zoom}
+\end{figure}
+
+% \begin{figure}[ht!]
+%     \centering
+%     \begin{subfigure}[b]{0.44\textwidth}
+%         % \import{../assets/}{circuito_osc_R.pdf_tex}
+%         \includegraphics{onda_sin_AC(f)_taglio_frequenza.pdf}
+%         \caption{Zoom intersezione rette}
+%         \label{fig:frequenza di taglio C zoom}
+%     \end{subfigure}
+%     \hspace{0.1\textwidth}
+%     \begin{subfigure}[b]{0.44\textwidth}
+%         % \import{../assets/}{circuito_osc_C.pdf_tex}
+%         \includegraphics{onda_sin_AC(f)_taglio_intercette.pdf}
+%         \caption{Zoom massima e minima intercetta}
+%         \label{fig:frequenza di taglio C intercette}
+%     \end{subfigure}
+%     \caption{Zoom \autoref{fig:frequenza di taglio C}}
+%   \end{figure}
+
+\begin{align*}
+    f_{0 \; min} &= 12.0 \; kHz \\
+    f_{0 \; max} &= 12.5 \; kHz
+\end{align*}
+
+\begin{align*}
+    f_{0 \; best} &= \frac{f_{0 \; max} + f_{0 \; min}}{2} = 12.25 \approx 12.3 \; kHz \\
+    \delta f_{0} &= \frac{f_{0 \; max} - f_{0 \; min}}{2} = 0.25 \approx 0.3 \; kHz
+\end{align*}
+
+Quindi il valore di \(f_{0} = (12.3 \pm 0.3) \; kHz\).
+
+\newpage
+
+\subsection{Funzione di trasferimento ai capi di $R$}
+
+Con i dati raccolti si calcola il modulo della funzione di trasferimento $|A_{R}|$ al variare della frequenza utilizzando l' %cosa
+
+\subsubsection{Dati ed errori}
+
+% \begin{table}[ht!]
+%     \centering
+%     \caption{Misure dell'onda sinusoidale ai capi di $R$}
+%     \import{../tables/}{onda_sin_VR.tex}
+%     \label{tab:misure onda sinusoidale R}
+% \end{table}
+
+% todo: tabella misure ai capi di R
+
+\subsubsection{Analisi dati}
+
+% todo: grafico con caption: Grafico logaritmico di $|A_{R}|(f)$
 
 \section{Conclusioni}
+
+%qualcosa sulla funzione di trasferimento ottenuta?
+%valore ottenuto sulla freq. di cutoff, eventuali considerazioni nel caso la si confronti con il t. di risposta del circuito
+%c'è qualcosa che si può dire dei filtri passa-basso/alto? altrimenti togli questa riga
+
 
 \end{document}
