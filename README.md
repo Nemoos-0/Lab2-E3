@@ -1,0 +1,2 @@
+- Dobbiamo spiegare come abbiamo trovato la pendenza delle rette del grafico phi(f)?
+- Va bene tracciare queste rette o basta dire che non abbiamo abbastanza punti?
