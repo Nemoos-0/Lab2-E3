@@ -6,10 +6,10 @@
 \contentsline {subsection}{\numberline {3.1}Dati ed errori}{2}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Analisi dati}{3}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Onda sinusoidale}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Funzione di trasferimento ai capi di $C$}{4}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Dati ed errori}{4}{subsubsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1}Funzione di trasferimento ai capi di $C$}{5}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Dati ed errori}{5}{subsubsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}Analisi dati}{5}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}Funzione di trasferimento ai capi di $R$}{8}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Dati ed errori}{8}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Analisi dati}{8}{subsubsection.4.2.2}%
-\contentsline {section}{\numberline {5}Conclusioni}{8}{section.5}%
+\contentsline {subsection}{\numberline {4.2}Funzione di trasferimento ai capi di $R$}{10}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Dati ed errori}{10}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Analisi dati}{10}{subsubsection.4.2.2}%
+\contentsline {section}{\numberline {5}Conclusioni}{15}{section.5}%
