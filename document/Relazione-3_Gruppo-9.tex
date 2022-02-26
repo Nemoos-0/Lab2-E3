@@ -218,12 +218,12 @@ Quindi il valore di \(f_{C} = (12.3 \pm 0.3) \; kHz\).
 
 \rule{\textwidth}{1pt}
 
-Con i dati della \autoref{tab:misure onda sinusoidale C}, calcoliamo la fase $\varphi(f)$ con l'\autoref{eq:fase C}; i risultati ottenuti sono nella \autoref{tab:fase di C}.
+Con i dati della \autoref{tab:misure onda sinusoidale C}, calcoliamo la fase $\varphi_{C}(f)$ con l'\autoref{eq:fase C}; i risultati ottenuti sono nella \autoref{tab:fase di C}.
 
 \begin{align} \label{eq:fase C}
     \begin{split}
-        \varphi &= tf + 2k\pi \qquad k \in \mathbb{Z} \\
-        \delta \varphi &= \frac{\delta t}{t} \varphi
+        \varphi_{C} &= tf + 2k\pi \qquad k \in \mathbb{Z} \\
+        \delta \varphi_{C} &= \frac{\delta t}{t} \varphi_{C}
     \end{split}
 \end{align}
 
@@ -335,12 +335,12 @@ Quindi il valore di \(f_{R} = (12.5 \pm 0.3) \; kHz\).
 
 \rule{\textwidth}{1pt}
 
-Con i dati della \autoref{tab:misure onda sinusoidale R}, calcoliamo la fase $\varphi(f)$ con l'\autoref{eq:fase R}; i risultati ottenuti sono nella \autoref{tab:fase di R}.
+Con i dati della \autoref{tab:misure onda sinusoidale R}, calcoliamo la fase $\varphi_{R}(f)$ con l'\autoref{eq:fase R}; i risultati ottenuti sono nella \autoref{tab:fase di R}.
 
 \begin{align} \label{eq:fase R}
     \begin{split}
-        \varphi &= tf + 2k\pi \qquad k \in \mathbb{Z} \\
-        \delta \varphi &= \frac{\delta t}{t} \varphi
+        \varphi_{R} &= tf + 2k\pi \qquad k \in \mathbb{Z} \\
+        \delta \varphi_{R} &= \frac{\delta t}{t} \varphi_{R}
     \end{split}
 \end{align}
 
@@ -358,6 +358,8 @@ Con i dati della \autoref{tab:misure onda sinusoidale R}, calcoliamo la fase $\v
     \label{fig:fase R}
 \end{figure}
 
+\newpage
+
 Successivamente sono state tracciate due rette passanti per i punti più vicini ad $f_{R}$ dove ci si aspetta un andamento lineare (\autoref{fig:rette fase R}).
 
 \begin{figure}[ht!]
@@ -369,8 +371,6 @@ Successivamente sono state tracciate due rette passanti per i punti più vicini 
 \newpage
 
 L'intersezione delle rette di massima e minima intercetta con $\varphi_{R} = \pi/4$ è compatibile con il valore di $f_{R}$ calcolato precedentemente.
-
-\newpage
 
 \section{Conclusioni}
 
@@ -408,15 +408,13 @@ sia dalle misure di $R$ e $C$ trovate nella \autoref{sec:onda quadra}.
     \tau_{2} = RC = 13.51 \pm 0.73 \approx (13.5 \pm 0.7) \; \mu s
 \end{equation*}
 
-\newpage
-
 \begin{figure}[ht!]
     \includegraphics{tau_compatibili.pdf}
     \caption{Compatibilità di $\tau_{1}$ e $\tau_{2}$}
     \label{fig:tau compatibili}
 \end{figure}
  
-Si verifica che i due $\tau_{1,2}$ sono compatibili, con un valore finale di $\tau = (12.9 \pm 0.1) \mu s$.
+Si verifica che i due $\tau_{1,2}$ sono compatibili, con un valore finale di $\tau = (12.90 \pm 0.10) \mu s$.
 
 % \appendix
 % \section{Frequenza dell'onda quadra}
