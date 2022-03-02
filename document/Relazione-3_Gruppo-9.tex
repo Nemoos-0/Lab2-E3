@@ -1,6 +1,6 @@
 \documentclass[11pt, a4paper]{article}
 
-\usepackage[margin=1in]{geometry} % manage page dimentions
+\usepackage[margin=1in]{geometry} % manage page dimensions
 \usepackage[utf8]{inputenc} % utf-8 encoding
 \usepackage[italian]{babel} % italian default text
 \usepackage[hidelinks]{hyperref} % link references
@@ -12,7 +12,7 @@
 \usepackage{amsmath} % equation align
 \usepackage{siunitx} % SI unit
 \usepackage{booktabs} % tabular enhance
-\usepackage{multirow} % dinamic tabular cell dimentions
+\usepackage{multirow} % dynamic tabular cell dimensions
 \usepackage{longtable} % multi-page table
 \usepackage[labelfont=bf, skip=.5em, font=small]{caption} % beautiful caption
 \usepackage{subcaption} % subfigure
@@ -38,7 +38,7 @@
 
 \section{Obiettivo dell'esperienza}
 
-Lo scopo dell'esperienza è quello di calcolare il valore della resistenza e della capacità di un circuito RC. Per farlo si analizza la differenza di potenziale ai capi di R (\autoref{fig:circuito R}) e/o ai capi di C (\autoref{fig:circuito C}) quando si sottopone il circuito ad una tensione variabile.
+Lo scopo dell'esperienza è quello di calcolare il tempo di risposta di un circuito RC. Per farlo si analizza la differenza di potenziale ai capi di R (\autoref{fig:circuito R}) e/o ai capi di C (\autoref{fig:circuito C}) quando si sottopone il circuito ad una tensione variabile.
 
 \begin{figure}[ht!]
     \centering
@@ -70,28 +70,29 @@ Lo scopo dell'esperienza è quello di calcolare il valore della resistenza e del
 
 \section{Onda quadra} \label{sec:onda quadra}
 
-La prima parte dell'esperimento consiste nell'applicare ai capi del circuito una tensione variabile secondo un'onda quadra di ampiezza \(V_{0}\). La frequenza dell'onda è stata scelta in modo da permettere al condensatore di completare il regime transitorio, passando da una tensione \(V_{0}/2\) fino ad una tensione \(- V_{0}/2\). La curva osservata nell'oscilloscopio rappresenta la tensione \(V_{C}\) ai capi del condensatore in funzione del tempo \(t\) e segue l'\autoref{eq:regime transitorio onda quadra}.
+La prima parte dell'esperimento consiste nell'applicare ai capi del circuito una tensione variabile secondo un'onda quadra di ampiezza picco-picco pari a \(V_{0}\). La frequenza dell'onda ($f = (3.46 \pm 0.06) \; kHz$) è stata scelta in modo da permettere al condensatore di completare il regime transitorio, passando da una tensione \(V_{0}/2\) fino ad una tensione \(- V_{0}/2\). La curva osservata nell'oscilloscopio rappresenta la tensione \(V_{C}\) ai capi del condensatore in funzione del tempo \(t\) e segue l'\autoref{eq:regime transitorio onda quadra}, dove con $\tau = RC$ si indica il tempo caratteristico del circuito.
 
 \begin{equation} \label{eq:regime transitorio onda quadra}
-    V_{C} = V_{0} \cdot e^{-t/RC} - V_{0}/2
+    V_{C} = V_{0} \cdot e^{-t/\tau} - V_{0}/2
 \end{equation}
 
 Per prendere le misure il sistema di riferimento è stato traslato in modo da porre come zero delle ordinate il valore \(- V_{0}/2\) e ottenere l'\autoref{eq:regime transitorio condensatore}.
 
 \begin{equation} \label{eq:regime transitorio condensatore}
-    V = V_{0} \cdot e^{-t/RC}
+    V = V_{0} \cdot e^{-t/\tau}
 \end{equation}
 
 Noto il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\) (misurato con il multimetro) si vuole ottenere il valore di \(C\).
 
 \subsection{Dati ed errori}
 
-Sull'oscilloscopio è stato fissato il primo cursore in corrispondenza dell'asintoto della curva a \(- V_{0}/2\); questo sarà lo zero delle ordinate. \\
-Il secondo cursore è stato fatto variare in modo da ottenere la differenza di potenziale al variare del tempo. Le misure ottenute sono riportate, insieme ai loro errori già arrotondati, nella \autoref{tab:misure onda quadra}.
+Sull'oscilloscopio è stato fissato il primo cursore in corrispondenza dell'asintoto della curva a \(- V_{0}/2\); questo sarà lo zero delle ordinate.
+
+Il secondo cursore è stato fatto variare in modo da ottenere la differenza di potenziale al variare del tempo. Le misure ottenute sono riportate nella \autoref{tab:misure onda quadra} con i relativi errori pari a $1/10$ della scala.
 
 \begin{table}[ht!]
     \centering
-    \caption{Misure dell'onda quadra}
+    \caption{Misure della variazione di tensione ai capi di $C$ nel regime transitorio}
     \import{../tables/}{onda_quadra_Vt.tex}
     \label{tab:misure onda quadra}
 \end{table}
@@ -99,14 +100,14 @@ Il secondo cursore è stato fatto variare in modo da ottenere la differenza di p
 \subsection{Analisi dati}
 
 \begin{equation*}
-    V = V_{0} \cdot e^{-t/RC} \implies \ln(V) = \ln(V_{0} \cdot e^{-t/RC}) = \ln(V_{0}) - \frac{t}{RC}
+    V = V_{0} \cdot e^{-t/\tau} \implies \ln(V) = \ln(V_{0}) - \frac{t}{\tau}
 \end{equation*}
 
 Riportando le misure in un grafico semi-logaritmico (come in \autoref{fig:onda quadra pendenze}), ci si aspetta di ottenere una funzione lineare.
 
 \begin{figure}[ht!]
     \includegraphics{onda_quadra_V(t)_pendenze.pdf}
-    \caption{Grafico semi-logaritmico delle misure dell'onda quadra}
+    \caption{Grafico semi-logaritmico delle misure della variazione di tensione ai capi di $C$ nel regime transitorio}
     \label{fig:onda quadra pendenze}
 \end{figure}
 
@@ -129,29 +130,57 @@ La retta di massima pendenza passa per i punti \((-0.2, 7)\) e \((35, 0.6)\), me
 
 \newpage
 
-Essendo \(m = - \dfrac{1}{RC}\) e conoscendo il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\), calcoliamo $C$.
+Essendo \(m = - \dfrac{1}{\tau}\) è possibile ricavare il valore di $\tau = (13.5 \pm 0.7) \; \mu s$ utilizzando l'\autoref{eq:tau(m)}.
 
-\begin{align*}
-    \varepsilon_R &= \frac{0.004}{1.874} = 0.0021 \approx 0.002 \\
-    \varepsilon_m &= \frac{0.004}{0.074} = 0.054 \approx 0.05 \\
-    \varepsilon_C &= \sqrt{\varepsilon_R^{2} + \varepsilon_m^{2}} = 0.050
-\end{align*}
+\begin{align} \label{eq:tau(m)}
+    \begin{split}
+        \tau &= - \frac{1}{m} \\
+        \delta \tau &= \frac{\delta m}{m} \; \tau
+    \end{split}
+\end{align}
 
-\begin{equation}
-    C =  -\frac{1}{m R} = 7.21 \pm 0.36 \approx (7.2 \pm 0.4) \; \unit{nF}
-\end{equation}
+Conoscendo il valore di \(R = (1.874 \pm 0.004) \; \unit{k\Omega}\), si calcola $C = (7.2 \pm 0.4) \; nF$ con l'\autoref{eq:C(tau, R)}.
+
+\begin{align} \label{eq:C(tau, R)}
+    \begin{split}
+        C &= \frac{\tau}{R} \\
+        \delta C &= \left(\frac{\delta \tau}{\tau} + \frac{\delta R}{R}\right) \; C
+    \end{split}
+\end{align}
 
 \section{Onda sinusoidale}
 
-La seconda parte dell'esperimento consiste nel sottoporre il circuito a un regime di tensione sinusoidale, variando la frequenza in entrata; abbiamo poi misurato la tensione in entrata e uscita del circuito ai capi di $C$ e ai capi di $R$, così come il suo tempo di risposta. Con questi dati abbiamo determinato il modulo della \emph{funzione di trasferimento} $|A|$, la sua fase $\varphi$ e la frequenza di taglio $f_{0}$.
+La seconda parte dell'esperimento consiste nel sottoporre il circuito a tensione in regime sinusoidale. Variando la frequenza $f$ del segnale è stata misurata la tensione in entrata $V_{in}$ e quella in uscita $V_{out}$ del circuito, così come il tempo di sfasamento $t$ tra le due.
 
-Per indicare il componente in esame, nei nomi delle variabili è stato inserito a pedice $C$ per le misure del condensatore ed $R$ per quelle del resistore.
+Le misurazioni sono state effettuate 2 volte, prendendo la tensione in uscita prima ai capi del condensatore $C$ e successivamente ai capi di $R$.
+
+Con i dati raccolti sono stati calcolati il modulo della \emph{funzione di trasferimento} $|A|$ (\autoref{eq:modulo funzione di trasferimento}) e la sua fase $\varphi$ (\autoref{eq:fase funzione di trasferimento}).
+
+\begin{align} \label{eq:modulo funzione di trasferimento}
+    \begin{split}
+        |A| &= \frac{V_{out}}{V_{in}} \\
+        \delta |A| &= \left(\frac{\delta V_{out}}{V_{out}} + \frac{\delta V_{in}}{V_{in}}\right) \cdot |A|
+    \end{split}
+\end{align}
+
+\begin{align} \label{eq:fase funzione di trasferimento}
+    \begin{split}
+        \varphi &= 2\pi f \; t \\
+        \delta \varphi &= 2\pi f \; \delta t
+    \end{split}
+\end{align}
+
+Attraverso l'analisi grafica delle misure è stato ricavato il valore della frequenza di taglio $f_{0}$ del circuito.
+
+Per indicare il componente in esame, nei nomi delle variabili è stato inserito a pedice "$C$" per le misure del condensatore ed "$R$" per quelle del resistore.
 
 \subsection{Funzione di trasferimento ai capi di $C$}
 
 \subsubsection{Dati ed errori}
 
-Nella \autoref{tab:misure onda sinusoidale C} sono riportati i risultati delle misurazioni effettuate con i relativi errori
+Nella \autoref{tab:misure onda sinusoidale C} sono riportati i risultati delle misurazioni effettuate con i relativi errori.
+
+Per le tensioni in entrata $V_{in}$ la scala utilizzata è sempre di $1 V$ con errore $\delta V_{in} = 0.1 V$; questi non sono riportati in tabella per compattezza.
 
 \begin{table}[ht!]
     \centering
@@ -162,110 +191,76 @@ Nella \autoref{tab:misure onda sinusoidale C} sono riportati i risultati delle m
 
 \subsubsection{Analisi dati}
 
-Con i dati raccolti si calcola il modulo della funzione di trasferimento $|A_{C}|$ al variare della frequenza utilizzando l'\autoref{eq:funzione di trasferimento C}
-
-\begin{align} \label{eq:funzione di trasferimento C}
-    \begin{split}
-        |A_{C}| &= \frac{V_{out}}{V_{in}} \\
-        \varepsilon_{|A_{C}|} &= \frac{\delta V_{out}}{V_{out}} + \frac{\delta V_{in}}{V_{in}}
-    \end{split}
-\end{align}
+I valori del modulo e della fase della funzione di trasferimento ai capi di $C$ sono riportati nella \autoref{tab:funzione di trasferimento C}.
 
 \begin{table}[ht!]
     \centering
-    \caption{Valori di $|A_{C}|$}
-    \import{../tables/}{onda_sin_AC.tex}
+    \caption{Modulo e fase della funzione di trasferimento ai capi di $C$}
+    \import{../tables/}{funzione_di_trasferimento_C.tex}
     \label{tab:funzione di trasferimento C}
 \end{table}
 
-Riportando le misure della \autoref{tab:funzione di trasferimento C} in un grafico logaritmico $|A_{C}|(f)$ si ottiene la \autoref{fig:funzione di trasferimento C}.
-
-\begin{figure}[ht!]
-    \includegraphics{onda_sin_AC(f).pdf}
-    \caption{Grafico logaritmico di $|A_{C}|(f)$}
-    \label{fig:funzione di trasferimento C}
-\end{figure}
-
 \newpage
 
-Si osserva che il modulo della funzione di trasferimento, in scala logaritmica, assume un andamento lineare a frequenze elevate; è possibile quindi tracciare una retta di pendenza $-1$ passante per i punti situati all'estrema destra del grafico. Questa retta interseca l'asintoto orizzontale $|A_{C}| = 1$ alla frequenza di taglio $f_{C}$.
+Riportando le misure della \autoref{tab:funzione di trasferimento C} in un grafico logaritmico $|A_{C}|(f)$ si ottiene la \autoref{fig:frequenza di taglio C}.
+
+%\begin{figure}[ht!]
+%    \includegraphics{onda_sin_AC(f).pdf}
+%    \caption{Grafico logaritmico del modulo della funzione di trasferimento ai capi di $C$ in funzione di $f$}
+%    \label{fig:funzione di trasferimento C}
+%\end{figure}
+
+%? \newpage
+
+Si osserva che il modulo della funzione di trasferimento, in scala logaritmica, assume un andamento lineare agli estremi del grafico. A basse frequenze la funzione avrà andamento costante mentre ad alte frequenze si avrà un andamento lineare con pendenza $-1$.
 
 \begin{figure}[ht!]
     \includegraphics{onda_sin_AC(f)_taglio.pdf}
-    \caption{Grafico della stima della frequenza di taglio}
+    \caption{Rette nelle zone di linearità del grafico del modulo della funzione di trasferimento ai capi di $C$}
     \label{fig:frequenza di taglio C}
 \end{figure}
 
 \begin{figure}[ht!]
     \includegraphics{onda_sin_AC(f)_taglio_frequenza.pdf}
-    \caption{Zoom intersezione rette}
+    \caption{Zoom della \autoref{fig:frequenza di taglio C} per la stima della frequenza di taglio}
     \label{fig:frequenza di taglio C zoom}
 \end{figure}
 
-Abbiamo riportato uno zoom sull'intersezione delle rette in \autoref{fig:frequenza di taglio C zoom}.
+\newpage
+
+Le rette si intersecano nei punti di frequenze
 
 \begin{align*}
     f_{C \; min} &= 12.0 \; kHz \\
-    f_{C \; max} &= 12.5 \; kHz
+    f_{C \; max} &= 12.95 \; kHz
 \end{align*}
 
 \begin{align*}
-    f_{C \; best} &= \frac{f_{C \; max} + f_{C \; min}}{2} = 12.25 \approx 12.3 \; kHz \\
-    \delta f_{C} &= \frac{f_{C \; max} - f_{C \; min}}{2} = 0.25 \approx 0.3 \; kHz
+    f_{C \; best} &= \frac{f_{C \; max} + f_{C \; min}}{2} = 12.475 \approx 12.5 \; kHz \\
+    \delta f_{C} &= \frac{f_{C \; max} - f_{C \; min}}{2} = 0.475 \approx 0.5 \; kHz
 \end{align*}
 
-Quindi il valore di \(f_{C} = (12.3 \pm 0.3) \; kHz\).
+Quindi il valore della frequenza di taglio calcolata utilizzando le misure ai capi di $C$ è \(f_{C} = (12.5 \pm 0.5) \; kHz\).
 
-\rule{\textwidth}{1pt}
-
-Con i dati della \autoref{tab:misure onda sinusoidale C}, calcoliamo la fase $\varphi_{C}(f)$ con l'\autoref{eq:fase C}; i risultati ottenuti sono nella \autoref{tab:fase di C}.
-
-\begin{align} \label{eq:fase C}
-    \begin{split}
-        \varphi_{C} &= 2\pi \cdot tf \\
-        \delta \varphi_{C} &= \frac{\delta t}{t} \cdot \varphi_{C}
-    \end{split}
-\end{align}
-
-\begin{table}[ht!]
-    \centering
-    \caption{Valori di $\varphi_{C}$}
-    \import{../tables/}{onda_sin_phiC.tex}
-    \label{tab:fase di C}
-\end{table}
-
+Riportiamo le frequenze in \autoref{fig:fase C} per verificare che i valori della fase siano compatibili con la frequenza di taglio ottenuta.
 
 \begin{figure}[ht!]
     \includegraphics{onda_sin_phi(f)_C.pdf}
-    \caption{Grafico di $\varphi_{C}(f)$}
+    \caption{Grafico della fase della funzione di trasferimento ai capi di $C$}
     \label{fig:fase C}
 \end{figure}
 
-\newpage
-
-Successivamente sono state tracciate due rette passanti per i punti più vicini ad $f_{C}$ dove ci si aspetta un andamento lineare (\autoref{fig:rette fase C}).
-
-\begin{figure}[ht!]
-    \includegraphics{onda_sin_phi(f)_C_intercette.pdf}
-    \caption{Rette intorno a $f_{C}$}
-    \label{fig:rette fase C}
-\end{figure}
+Visto l'andamento decrescente della funzione, la frequenza di taglio risulta compatibile con i valori della fase.
 
 \newpage
-
-L'intersezione delle rette di massima e minima intercetta con $\varphi_{C} = -\pi/4$ è compatibile con il valore di $f_{C}$ calcolato precedentemente.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% blocco opzionale
-%Abbiamo quindi tracciato le rette di massima e minima intercetta passanti per i punti $(f_{0} - \delta f_{0}, -\pi/4)$ e $(f_{0} + \delta f_{0}, -\pi/4)$ in modo da poter osservare come il punto $(15.55, -0.90)$ è sufficientemente vicino alla frequenza di taglio da intersecare le rette con le sue barre d'errore.
-
-% Per trovare la pendenza delle rette da tracciare, abbiamo valutato la derivata di (...)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% blocco opzionale
 
 \subsection{Funzione di trasferimento ai capi di $R$}
 
 \subsubsection{Dati ed errori}
 
-Nella \autoref{tab:misure onda sinusoidale R} sono riportati i risultati delle misurazioni effettuate con i relativi errori
+Nella \autoref{tab:misure onda sinusoidale R} sono riportati i risultati delle misurazioni effettuate con i relativi errori. 
+
+Per le tensioni in entrata $V_{in}$ la scala utilizzata è sempre di $1 V$ con errore $\delta V_{in} = 0.1 V$; questi non sono riportati in tabella per compattezza.
 
 \begin{table}[ht!]
     \centering
@@ -277,147 +272,86 @@ Nella \autoref{tab:misure onda sinusoidale R} sono riportati i risultati delle m
 
 \subsubsection{Analisi dati}
 
-Con i dati raccolti si calcola il modulo della funzione di trasferimento $|A_{R}|$ al variare della frequenza utilizzando l'\autoref{eq:funzione di trasferimento R}
-
-\begin{align} \label{eq:funzione di trasferimento R}
-    \begin{split}
-        |A_{R}| &= \frac{V_{out}}{V_{in}} \\
-        \varepsilon_{|A_{R}|} &= \frac{\delta V_{out}}{V_{out}} + \frac{\delta V_{in}}{V_{in}}
-    \end{split}
-\end{align}
+I valori del modulo e della fase della funzione di trasferimento ai capi di $R$ sono stati riportati nella \autoref{tab:funzione di trasferimento R}.
 
 \begin{table}[ht!]
     \centering
-    \caption{Valori di $|A_{R}|$}
-    \import{../tables/}{onda_sin_AR.tex}
+    \caption{Modulo e fase della funzione di trasferimento ai capi di $R$}
+    \import{../tables/}{funzione_di_trasferimento_R.tex}
     \label{tab:funzione di trasferimento R}
 \end{table}
 
-Riportando le misure della \autoref{tab:funzione di trasferimento R} in un grafico logaritmico $|A_{R}|(f)$ si ottiene la \autoref{fig:funzione di trasferimento R}
+Riportando le misure della \autoref{tab:funzione di trasferimento R} in un grafico logaritmico $|A_{R}|(f)$ si ottiene la \autoref{fig:frequenza di taglio R}.
 
-\begin{figure}[ht!]
-    \includegraphics{onda_sin_AR(f).pdf}
-    \caption{Grafico logaritmico di $|A_{R}|(f)$}
-    \label{fig:funzione di trasferimento R}
-\end{figure}
+%? Nella funzione $|A_{R}|$ si avrà un andamento lineare a basse frequenze; quindi è stata tracciata una retta di pendenza $1$ passante per i punti situati all'estrema sinistra del grafico. Questa retta interseca l'asintoto orizzontale $|A_{R}| = 1$ alla frequenza di taglio $f_{R}$. 
+%todo: ricopia quanto scritto @ riga 217
 
-\newpage
-
-Nella funzione $|A_{R}|$ si avrà un andamento lineare a basse frequenze; tracciamo in questo caso una retta di pendenza $1$ passante per i punti situati all'estrema sinistra del grafico. Questa retta interseca l'asintoto orizzontale $|A_{R}| = 1$ alla frequenza di taglio $f_{R}$.
+In maniera opposta alla funzione di trasferimento valutata ai capi di $C$, a basse frequenze la funzione avrà andamento lineare con pendenza $1$, mentre sarà costante per frequenze alte.
 
 \begin{figure}[ht!]
     \includegraphics{onda_sin_AR(f)_taglio.pdf}
-    \caption{Grafico della stima della frequenza di taglio}
+    \caption{Rette nelle zone di linearit`a del grafico del modulo della funzione di trasferimento ai capi di $R$}
     \label{fig:frequenza di taglio R}
 \end{figure}
 
 \newpage
 
-Abbiamo riportato uno zoom sull'intersezione delle rette in \autoref{fig:frequenza di taglio R zoom}.
-
 \begin{figure}[ht!]
     \includegraphics{onda_sin_AR(f)_taglio_frequenza.pdf}
-    \caption{Zoom intersezione rette}
+    \caption{Zoom della \autoref{fig:frequenza di taglio R} per la stima della frequenza di taglio}
     \label{fig:frequenza di taglio R zoom}
 \end{figure}
 
 \begin{align*}
-    f_{R \; min} &= 12.2 \; kHz \\
+    f_{R \; min} &= 11.8 \; kHz \\
     f_{R \; max} &= 12.8 \; kHz
 \end{align*}
 
 \begin{align*}
-    f_{R \; best} &= \frac{f_{R \; max} + f_{R \; min}}{2} = 12.5  \; kHz \\
-    \delta f_{R} &= \frac{f_{R \; max} - f_{R \; min}}{2} = 0.3 \; kHz
+    f_{R \; best} &= \frac{f_{R \; max} + f_{R \; min}}{2} = 12.3  \; kHz \\
+    \delta f_{R} &= \frac{f_{R \; max} - f_{R \; min}}{2} = 0.5 \; kHz
 \end{align*}
 
-Quindi il valore di \(f_{R} = (12.5 \pm 0.3) \; kHz\).
+Quindi il valore di \(f_{R} = (12.3 \pm 0.5) \; kHz\).
 
-\rule{\textwidth}{1pt}
-
-Con i dati della \autoref{tab:misure onda sinusoidale R}, calcoliamo la fase $\varphi_{R}(f)$ con l'\autoref{eq:fase R}; i risultati ottenuti sono nella \autoref{tab:fase di R}.
-
-\begin{align} \label{eq:fase R}
-    \begin{split}
-        \varphi_{R} &= 2\pi \cdot tf \\
-        \delta \varphi_{R} &= \frac{\delta t}{t} \cdot \varphi_{R}
-    \end{split}
-\end{align}
-
-\begin{table}[ht!]
-    \centering
-    \caption{Valori di $\varphi_{R}$}
-    \import{../tables/}{onda_sin_phiR.tex}
-    \label{tab:fase di R}
-\end{table}
-
+Riportiamo le frequenze in \autoref{fig:fase R} per verificare che i valori della fase siano compatibili con la frequenza di taglio ottenuta.
 
 \begin{figure}[ht!]
     \includegraphics{onda_sin_phi(f)_R.pdf}
-    \caption{Grafico di $\varphi_{R}(f)$}
+    \caption{Grafico della fase della funzione di trasferimento ai capi di $R$}
     \label{fig:fase R}
 \end{figure}
 
-\newpage
-
-Successivamente sono state tracciate due rette passanti per i punti più vicini ad $f_{R}$ dove ci si aspetta un andamento lineare (\autoref{fig:rette fase R}).
-
-\begin{figure}[ht!]
-    \includegraphics{onda_sin_phi(f)_R_intercette.pdf}
-    \caption{Rette intorno a $f_{R}$}
-    \label{fig:rette fase R}
-\end{figure}
+Visto l'andamento decrescente della funzione, la frequenza di taglio risulta compatibile con i valori della fase.
 
 \newpage
-
-L'intersezione delle rette di massima e minima intercetta con $\varphi_{R} = \pi/4$ è compatibile con il valore di $f_{R}$ calcolato precedentemente.
 
 \section{Conclusioni}
 
-I valori di $f_{C}$ ed $f_{R}$ ricavati:
+Tramite il valore di $\tau = (13.5 \pm 0.7) \; \mu s$ ottenuto nella \autoref{sec:onda quadra} è possibile calcolare (\autoref{eq:f(tau)}) la frequenza di taglio del circuito $f_{\tau} = (11.8 \pm 0.6) \; kHz$.
+
+\begin{align} \label{eq:f(tau)}
+    \begin{split}
+        f_{\tau} &= \frac{1}{2 \pi \tau} \\
+        \delta f_{\tau} &= \frac{\delta \tau}{\tau} \; f
+    \end{split}
+\end{align}
+
+Confrontando il valore appena ottenuto con $f_{C}$ ed $f_{R}$ essi risultano compatibili, come è possibile vedere nella \autoref{fig:fC ed fR compatibili}.
 
 \begin{align*}
-    f_{C} &= (12.3 \pm 0.3) \; kHz \\
-    f_{R} &= (12.5 \pm 0.3) \; kHz
+    f_{C} &= (12.5 \pm 0.5) \; kHz \\
+    f_{R} &= (12.3 \pm 0.5) \; kHz
 \end{align*}
 
 \begin{figure}[ht!]
     \includegraphics{f_0_compatibili.pdf}
-    \caption{Compatibilità di $f_{C}$ ed $f_{R}$}
+    \caption{Verifica della compatibilità di $f_{C}$ ed $f_{R}$}
     \label{fig:fC ed fR compatibili}
 \end{figure}
 
-risultano compatibili, come è possibile vedere nella \autoref{fig:fC ed fR compatibili}. Possiamo dare un valore finale di $f_{0} = (12.4 \pm 0.2) \; kHz$.
+\newpage
 
-Con questo valore appena ottenuto, calcoliamo $\omega_{0} = 2 \pi f_{0} = 77.91 \pm 1.26 \approx (77.9 \pm 1.3) \; rad/ms$.
-
-Il tempo caratteristico del circuito si può calcolare sia a partire da $\omega_{0}$
-
-\begin{equation*}
-    \tau_{1} = \frac{1}{\omega_{0}} = 12.84 \pm 0.21 \approx (12.8 \pm 0.2) \; \mu s
-\end{equation*}
-
-sia dalle misure di $R$ e $C$ trovate nella \autoref{sec:onda quadra}.
-
-\begin{align*}
-    R &= (1.874 \pm 0.004) \; \unit{k\Omega} \\
-    C &= (7.2 \pm 0.4) \; \unit{nF}
-\end{align*}
-
-\begin{equation*}
-    \tau_{2} = RC = 13.51 \pm 0.73 \approx (13.5 \pm 0.7) \; \mu s
-\end{equation*}
-
-\begin{figure}[ht!]
-    \includegraphics{tau_compatibili.pdf}
-    \caption{Compatibilità di $\tau_{1}$ e $\tau_{2}$}
-    \label{fig:tau compatibili}
-\end{figure}
- 
-Si verifica che i due $\tau_{1,2}$ sono compatibili, con un valore finale di $\tau = (12.90 \pm 0.10) \mu s$.
-
-% \appendix
-% \section{Frequenza dell'onda quadra}
-% todo
+È possibile dare un valore finale di $f_{0} = (12.2 \pm 0.2) \; kHz$.
 
 \end{document}

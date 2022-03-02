@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.1)  27 FEB 2022 19:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.1)  2 MAR 2022 19:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/Documenti/Documenti/Università/Triennale/Anno 2/Laboratorio II/Esperienza 3/document/Relazione-3_Gruppo-9.tex"
-(d:/Documenti/Documenti/Università/Triennale/Anno 2/Laboratorio II/Esperienza 3/document/Relazione-3_Gruppo-9.tex
+**"d:/Documenti/Documenti/Università/Triennale/Anno 2/Laboratorio II/1 Semestre/Relazioni/Esperienza 3/document/Relazione-3_Gruppo-9.tex"
+(d:/Documenti/Documenti/Università/Triennale/Anno 2/Laboratorio II/1 Semestre/Relazioni/Esperienza 3/document/Relazione-3_Gruppo-9.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -520,166 +520,116 @@ Package pdftex.def Info: ../assets//circuito_osc_C.pdf  used on input line 52.
 (pdftex.def)             Requested size: 135.89174pt x 76.31088pt.
  [1
 
-{C:/Users/mrmat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (../tables/../tables/onda_quadra_Vt.tex) [2 <../assets//circuito_osc_R.pdf> <../assets//circuito_osc_C.pdf
+{C:/Users/mrmat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <../assets//circuito_osc_R.pdf> <../assets//circuito_osc_C.pdf
 
 pdfTeX warning: pdflatex (file ../assets//circuito_osc_C.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+>] (../tables/../tables/onda_quadra_Vt.tex)
 <../assets//onda_quadra_V(t)_pendenze.pdf, id=66, 413.47194pt x 268.04518pt>
 File: ../assets//onda_quadra_V(t)_pendenze.pdf Graphic file (type pdf)
 <use ../assets//onda_quadra_V(t)_pendenze.pdf>
-Package pdftex.def Info: ../assets//onda_quadra_V(t)_pendenze.pdf  used on input line 108.
+Package pdftex.def Info: ../assets//onda_quadra_V(t)_pendenze.pdf  used on input line 109.
 (pdftex.def)             Requested size: 413.47092pt x 268.04451pt.
- [3]
+ [3] [4 <../assets//onda_quadra_V(t)_pendenze.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 177.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 177.
 
-(../tables/../tables/onda_sin_VC.tex) [4 <../assets//onda_quadra_V(t)_pendenze.pdf>] (../tables/../tables/onda_sin_AC.tex)
-<../assets//onda_sin_AC(f).pdf, id=111, 469.75504pt x 290.32458pt>
-File: ../assets//onda_sin_AC(f).pdf Graphic file (type pdf)
-<use ../assets//onda_sin_AC(f).pdf>
-Package pdftex.def Info: ../assets//onda_sin_AC(f).pdf  used on input line 184.
-(pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
-
-Overfull \hbox (16.786pt too wide) in paragraph at lines 184--185
-[][] 
- []
-
-[5]
-<../assets//onda_sin_AC(f)_taglio.pdf, id=122, 469.75504pt x 290.32458pt>
+(../tables/../tables/onda_sin_VC.tex) (../tables/../tables/funzione_di_trasferimento_C.tex) [5]
+<../assets//onda_sin_AC(f)_taglio.pdf, id=126, 469.75504pt x 290.32458pt>
 File: ../assets//onda_sin_AC(f)_taglio.pdf Graphic file (type pdf)
 <use ../assets//onda_sin_AC(f)_taglio.pdf>
-Package pdftex.def Info: ../assets//onda_sin_AC(f)_taglio.pdf  used on input line 194.
+Package pdftex.def Info: ../assets//onda_sin_AC(f)_taglio.pdf  used on input line 218.
 (pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
 
-Overfull \hbox (16.786pt too wide) in paragraph at lines 194--195
+Overfull \hbox (16.786pt too wide) in paragraph at lines 218--219
 [][] 
  []
 
-<../assets//onda_sin_AC(f)_taglio_frequenza.pdf, id=123, 469.75504pt x 290.32458pt>
+<../assets//onda_sin_AC(f)_taglio_frequenza.pdf, id=127, 469.75504pt x 290.32458pt>
 File: ../assets//onda_sin_AC(f)_taglio_frequenza.pdf Graphic file (type pdf)
 <use ../assets//onda_sin_AC(f)_taglio_frequenza.pdf>
-Package pdftex.def Info: ../assets//onda_sin_AC(f)_taglio_frequenza.pdf  used on input line 200.
+Package pdftex.def Info: ../assets//onda_sin_AC(f)_taglio_frequenza.pdf  used on input line 224.
 (pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
 
-Overfull \hbox (16.786pt too wide) in paragraph at lines 200--201
+Overfull \hbox (16.786pt too wide) in paragraph at lines 224--225
 [][] 
  []
 
-[6 <../assets//onda_sin_AC(f).pdf>] [7 <../assets//onda_sin_AC(f)_taglio.pdf> <../assets//onda_sin_AC(f)_taglio_frequenza.pdf>] (../tables/../tables/onda_sin_phiC.tex)
-<../assets//onda_sin_phi(f)_C.pdf, id=245, 469.75504pt x 290.32458pt>
+[6 <../assets//onda_sin_AC(f)_taglio.pdf>]
+<../assets//onda_sin_phi(f)_C.pdf, id=182, 469.75504pt x 290.32458pt>
 File: ../assets//onda_sin_phi(f)_C.pdf Graphic file (type pdf)
 <use ../assets//onda_sin_phi(f)_C.pdf>
-Package pdftex.def Info: ../assets//onda_sin_phi(f)_C.pdf  used on input line 239.
+Package pdftex.def Info: ../assets//onda_sin_phi(f)_C.pdf  used on input line 248.
 (pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
 
-Overfull \hbox (16.786pt too wide) in paragraph at lines 239--240
+Overfull \hbox (16.786pt too wide) in paragraph at lines 248--249
 [][] 
  []
 
-[8]
-<../assets//onda_sin_phi(f)_C_intercette.pdf, id=253, 469.75504pt x 290.32458pt>
-File: ../assets//onda_sin_phi(f)_C_intercette.pdf Graphic file (type pdf)
-<use ../assets//onda_sin_phi(f)_C_intercette.pdf>
-Package pdftex.def Info: ../assets//onda_sin_phi(f)_C_intercette.pdf  used on input line 249.
-(pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
-
-Overfull \hbox (16.786pt too wide) in paragraph at lines 249--250
-[][] 
- []
-
-[9 <../assets//onda_sin_phi(f)_C.pdf> <../assets//onda_sin_phi(f)_C_intercette.pdf>]
+[7 <../assets//onda_sin_AC(f)_taglio_frequenza.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 264.
+(hyperref)                removing `math shift' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 264.
+(hyperref)                removing `math shift' on input line 257.
 
-(../tables/../tables/onda_sin_VR.tex) (../tables/../tables/onda_sin_AR.tex)
-<../assets//onda_sin_AR(f).pdf, id=317, 469.75504pt x 290.32458pt>
-File: ../assets//onda_sin_AR(f).pdf Graphic file (type pdf)
-<use ../assets//onda_sin_AR(f).pdf>
-Package pdftex.def Info: ../assets//onda_sin_AR(f).pdf  used on input line 299.
-(pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
-
-Overfull \hbox (16.786pt too wide) in paragraph at lines 299--300
-[][] 
- []
-
-[10]
-<../assets//onda_sin_AR(f)_taglio.pdf, id=326, 469.75504pt x 290.32458pt>
+(../tables/../tables/onda_sin_VR.tex) (../tables/../tables/funzione_di_trasferimento_R.tex) [8 <../assets//onda_sin_phi(f)_C.pdf>]
+<../assets//onda_sin_AR(f)_taglio.pdf, id=261, 469.75504pt x 290.32458pt>
 File: ../assets//onda_sin_AR(f)_taglio.pdf Graphic file (type pdf)
 <use ../assets//onda_sin_AR(f)_taglio.pdf>
-Package pdftex.def Info: ../assets//onda_sin_AR(f)_taglio.pdf  used on input line 309.
+Package pdftex.def Info: ../assets//onda_sin_AR(f)_taglio.pdf  used on input line 292.
 (pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
 
-Overfull \hbox (16.786pt too wide) in paragraph at lines 309--310
+Overfull \hbox (16.786pt too wide) in paragraph at lines 292--293
 [][] 
  []
 
-[11 <../assets//onda_sin_AR(f).pdf>]
-<../assets//onda_sin_AR(f)_taglio_frequenza.pdf, id=357, 469.75504pt x 290.32458pt>
+[9 <../assets//onda_sin_AR(f)_taglio.pdf>]
+<../assets//onda_sin_AR(f)_taglio_frequenza.pdf, id=302, 469.75504pt x 290.32458pt>
 File: ../assets//onda_sin_AR(f)_taglio_frequenza.pdf Graphic file (type pdf)
 <use ../assets//onda_sin_AR(f)_taglio_frequenza.pdf>
-Package pdftex.def Info: ../assets//onda_sin_AR(f)_taglio_frequenza.pdf  used on input line 319.
+Package pdftex.def Info: ../assets//onda_sin_AR(f)_taglio_frequenza.pdf  used on input line 300.
 (pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
 
-Overfull \hbox (16.786pt too wide) in paragraph at lines 319--320
+Overfull \hbox (16.786pt too wide) in paragraph at lines 300--301
 [][] 
  []
 
-[12 <../assets//onda_sin_AR(f)_taglio.pdf> <../assets//onda_sin_AR(f)_taglio_frequenza.pdf>] (../tables/../tables/onda_sin_phiR.tex)
-<../assets//onda_sin_phi(f)_R.pdf, id=435, 469.75504pt x 290.32458pt>
+<../assets//onda_sin_phi(f)_R.pdf, id=306, 469.75504pt x 290.32458pt>
 File: ../assets//onda_sin_phi(f)_R.pdf Graphic file (type pdf)
 <use ../assets//onda_sin_phi(f)_R.pdf>
-Package pdftex.def Info: ../assets//onda_sin_phi(f)_R.pdf  used on input line 356.
+Package pdftex.def Info: ../assets//onda_sin_phi(f)_R.pdf  used on input line 320.
 (pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
 
-Overfull \hbox (16.786pt too wide) in paragraph at lines 356--357
+Overfull \hbox (16.786pt too wide) in paragraph at lines 320--321
 [][] 
  []
 
-[13]
-<../assets//onda_sin_phi(f)_R_intercette.pdf, id=444, 469.75504pt x 290.32458pt>
-File: ../assets//onda_sin_phi(f)_R_intercette.pdf Graphic file (type pdf)
-<use ../assets//onda_sin_phi(f)_R_intercette.pdf>
-Package pdftex.def Info: ../assets//onda_sin_phi(f)_R_intercette.pdf  used on input line 366.
-(pdftex.def)             Requested size: 469.75389pt x 290.32387pt.
-
-Overfull \hbox (16.786pt too wide) in paragraph at lines 366--367
-[][] 
- []
-
-[14 <../assets//onda_sin_phi(f)_R.pdf> <../assets//onda_sin_phi(f)_R_intercette.pdf>]
-<../assets//f_0_compatibili.pdf, id=501, 416.99974pt x 241.51703pt>
+[10 <../assets//onda_sin_AR(f)_taglio_frequenza.pdf>]
+<../assets//f_0_compatibili.pdf, id=350, 421.62468pt x 241.51703pt>
 File: ../assets//f_0_compatibili.pdf Graphic file (type pdf)
 <use ../assets//f_0_compatibili.pdf>
-Package pdftex.def Info: ../assets//f_0_compatibili.pdf  used on input line 385.
-(pdftex.def)             Requested size: 416.99872pt x 241.51643pt.
-<../assets//tau_compatibili.pdf, id=504, 415.7775pt x 241.51703pt>
-File: ../assets//tau_compatibili.pdf Graphic file (type pdf)
-<use ../assets//tau_compatibili.pdf>
-Package pdftex.def Info: ../assets//tau_compatibili.pdf  used on input line 412.
-(pdftex.def)             Requested size: 415.77647pt x 241.51643pt.
- [15 <../assets//f_0_compatibili.pdf>] [16 <../assets//tau_compatibili.pdf>] (Relazione-3_Gruppo-9.aux) ) 
+Package pdftex.def Info: ../assets//f_0_compatibili.pdf  used on input line 348.
+(pdftex.def)             Requested size: 421.62364pt x 241.51643pt.
+ [11 <../assets//onda_sin_phi(f)_R.pdf>] [12 <../assets//f_0_compatibili.pdf>] (Relazione-3_Gruppo-9.aux) ) 
 Here is how much of TeX's memory you used:
- 16835 strings out of 478593
- 315565 string characters out of 2854420
- 600051 words of memory out of 3000000
- 34702 multiletter control sequences out of 15000+600000
+ 16767 strings out of 478593
+ 313678 string characters out of 2854420
+ 604183 words of memory out of 3000000
+ 34656 multiletter control sequences out of 15000+600000
  480272 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,15n,79p,666b,829s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Relazione-3_Gruppo-9.pdf (16 pages, 769037 bytes).
+ 70i,16n,79p,806b,829s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mrmat/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on Relazione-3_Gruppo-9.pdf (12 pages, 652847 bytes).
 PDF statistics:
- 683 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
